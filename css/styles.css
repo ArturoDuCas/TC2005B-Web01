@@ -1,0 +1,104 @@
+@import url("global.css"); 
+
+#primera-vista {
+    margin-top: var(--header-height); 
+    background-image: url("../img/option2.jpg");
+    background-size: cover;
+    background-position: top;
+    height: calc(100vh - var(--header-height)); 
+    display: flex; 
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 50px; 
+}
+
+#primera-lado-izquierdo {
+    margin-right: 150px; 
+}
+
+#titulo-principal {
+    color: var(--white-font); 
+    font-size: 90px; 
+    margin-bottom: 15px;
+}
+
+#botones {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 25%;  */
+    column-gap: 50px; 
+}
+
+.boton-principal {
+    width: 200px; 
+    margin-bottom: 20px; 
+    font-size: 20px;
+    letter-spacing: 2px; 
+}
+
+.boton-principal.log {
+    background-color: var(--red-header); 
+}
+
+.boton-principal.sign {
+    border: 1px solid var(--red-header); 
+    background-color: unset;
+    color: white; 
+}
+
+#segunda-vista {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 100px; 
+    margin-bottom: 40px; 
+}
+
+#frase-imagen {
+    width: 30vw; 
+    height: 50vh; 
+    object-fit: cover;
+}
+
+#frase {
+    width: 40vw; 
+    font-size: 45px;
+    text-align: left;
+}
+
+.divisor {
+    width: 70vw; 
+    border-bottom: 2px solid black; 
+    margin-bottom: 50px; 
+}
+
+#tecera-vista {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+
+    margin-bottom: 40px; 
+
+
+}
+
+
+#tercera-vista-izquierdo {
+    width: 40vw; 
+}
+
+#tercera-vista-titulo {
+    font-size: 40px;
+    margin-bottom: 20px; 
+}
+
+#tercera-vista-texto {
+    font-size: 20px; 
+    text-align: justify;
+}
+#video {
+    width: 35vw; 
+    height: 400px; 
+}
