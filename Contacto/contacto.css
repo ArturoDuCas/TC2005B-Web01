@@ -1,1 +1,82 @@
 @import url(../css/global.css);
+
+h1 {
+    text-align: left;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-left: 20px;  
+}
+
+.titulo_input {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    padding: 20px 0 5px 0;
+}
+
+
+#contenedor-form {
+    display: flex; 
+    margin-top: 30px; 
+
+}
+
+#img-lado-izquierdo {
+    width: 40%; 
+    background-image: url(../img/contacto.jpg);
+    background-size: cover;
+    border-top-right-radius: 25px;
+}
+
+form {
+    padding: 0 5%; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input, textarea {
+    width: 100%; 
+    text-align: left;
+    padding: 2px 5px; 
+    border: none; 
+    border-bottom: 1px solid gray;
+    transition-property: border-bottom;
+    transition-duration: 0.2s;
+}
+
+
+label {
+    width: 45%; 
+}
+
+input:focus, textarea:focus { 
+    outline: none; 
+    border-bottom: 1px solid var(--contrast-color); 
+}
+
+label.message {
+    width: 100%; 
+}
+
+.submit {
+    text-align: center;
+    cursor: pointer; 
+    width: 150px; 
+    padding: 5px 0; 
+    margin-left: auto; 
+    border: none; 
+    border-radius: 15px;
+    background-color: white; 
+    color: var(--contrast-color);
+    border: 1px solid var(--contrast-color);
+    transition-property: background-color, color;
+    transition-duration: 0.15s;
+}
+
+.submit:hover {
+    background-color: var(--contrast-color);
+    color: var(--white-font);
+}

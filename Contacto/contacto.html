@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./contacto.css"/>
-    <title>Document</title>
+    <title>Contact</title>
 </head>
 <body>
     <header>
@@ -15,5 +15,40 @@
             <button class="header-button" onclick="window.location.href='./contacto.html'">Contact</button>
         </div>
     </header>
+    <main>
+        <h1>Get in touch with me</h1>
+        <div id="contenedor-form">
+            <img id="img-lado-izquierdo" src="./img/side-img.jpg"/>
+            <form>
+                <label for="fname_id" class="titulo_input fname">
+                    First Name: 
+                    <input id="fname_id" type="text" name="first_name" placeholder="Your Name" required>
+                </label>
+    
+                <label for="lname_id" class="titulo_input lname">
+                    Last Name: 
+                    <input id="lname_id" type="text" name="last_name" placeholder="Your Last Name" required>
+                </label>
+    
+                <label for="email_id" class="titulo_input email">
+                    Email: 
+                    <input id="email_id" type="email" name="email" placeholder="Your Email" required>
+                </label>
+    
+                <label for="pnumber_id" class="titulo_input pnumber">
+                    Phone Number: 
+                    <input id="pnumber_id" type="tel" name="phone_number" placeholder="Your Phone Number" required>
+                </label>
+    
+                <label for="message_id" class="titulo_input message">
+                    Message: 
+                    <textarea id="message_id" name="message"  required></textarea>
+                </label>
+                
+                <input type="submit" value="Send" class="submit">
+    
+            </form>
+        </div>
+    </main>
 </body>
 </html>
