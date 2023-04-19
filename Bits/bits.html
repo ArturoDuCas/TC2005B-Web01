@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bits.css"/>
-    <title>Document</title>
+    <title>Top Music</title>
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 <body>
     <header>
@@ -15,5 +19,56 @@
             <button class="header-button" onclick="window.location.href='../Contacto/contacto.html'">Contact</button>
         </div>
     </header>
+    <main>
+        <h1>The best music</h1>
+        <div id="albums">
+
+            <div class="tarjeta">
+                <img src="./img/genrationwhy.jpeg" alt="Generation Why" class="imagen-tarjeta"/>
+                <div class="texto-tarjeta">
+                    <h3>GENERATIONWHY</h3>
+                    <audio id="generationwhy">
+                        <source src="./audio/generationwhy.mp3"></source>
+                    </audio>
+                    <div class="botones">
+                        <button class="boton-audio" onclick="document.getElementById('generationwhy').play()"><i class="fa fa-play"></i></button>
+                        <button class="boton-audio" onclick="document.getElementById('generationwhy').load()"><i class="fa fa-pause"></i></button>
+                        <button class="boton-audio" onclick="document.getElementById('generationwhy').pause()"><i class="fa fa-refresh"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tarjeta">
+                <img src="./img/TheNightday.jpg" alt="The Nightday" class="imagen-tarjeta"/>
+                <div class="texto-tarjeta">
+                    <h3>The Nightday</h3>
+                    <audio id="thenightday">
+                        <source src="./audio/cocainemodel.mp3"></source>
+                    </audio>
+                    <div class="botones">
+                        <button class="boton-audio" onclick="document.getElementById('thenightday').play()"><i class="fa fa-play"></i></button>
+                        <button class="boton-audio" onclick="document.getElementById('thenightday').load()"><i class="fa fa-pause"></i></button>
+                        <button class="boton-audio" onclick="document.getElementById('thenightday').pause()"><i class="fa fa-refresh"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tarjeta">
+                <img src="./img/ringosdesert.jpg" alt="RINGOS DESERT" class="imagen-tarjeta"/>
+                <div class="texto-tarjeta">
+                    <h3>RINGOS DESERT</h3>
+                    <audio id="ringosdesert">
+                        <source src="./audio/ringosdesert.mp3"></source>
+                    </audio>
+                    <div class="botones">
+                        <button class="boton-audio" onclick="document.getElementById('ringosdesert').play()"><i class="fa fa-play"></i></button>
+                        <button class="boton-audio" onclick="document.getElementById('ringosdesert').load()"><i class="fa fa-pause"></i></button>
+                        <button class="boton-audio" onclick="document.getElementById('ringosdesert').pause()"><i class="fa fa-refresh"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
 </body>
 </html>

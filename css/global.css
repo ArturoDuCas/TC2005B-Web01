@@ -2,7 +2,7 @@
 
 :root {
     --white-font: #F8F4EA; 
-    --red-header: #8c4e40; 
+    --contrast-color: #FF6D60; 
     --black: #000000;
     --header-height: 75px; 
 }
@@ -42,9 +42,22 @@ header a {
 }
 .header-button {
     margin-right: 20px; 
+    transition-property: background-color, color; 
+    transition-duration: 0.15s;
+}
+
+.header-button:hover {
+    background-color: var(--contrast-color);
+    color: var(--white-font);
 }
 
 #logo {
     color: var(--white-font); 
     font-size: 40px;
+    letter-spacing: 3px;
+
+}
+
+main {
+    margin-top: var(--header-height); 
 }

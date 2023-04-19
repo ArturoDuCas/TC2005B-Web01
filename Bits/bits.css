@@ -1,1 +1,55 @@
 @import url(../css/global.css);
+:root {
+    --card-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+main {
+    padding: 0 40px; 
+}
+
+h1 {
+    padding-top: 20px; 
+}
+
+#albums {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 150px; 
+    flex-wrap: wrap;
+    row-gap: 30px; 
+}
+
+.tarjeta {
+    width: 200px; 
+    box-shadow: var(--card-shadow);
+    margin: 0 25px; 
+    min-width: 200px; 
+}
+
+.imagen-tarjeta{
+    width: 100%; 
+}
+
+.texto-tarjeta {
+    padding: 3px 10px; 
+    letter-spacing: 1px;
+}
+
+.botones {
+    margin-top: 5px; 
+    margin-bottom: 10px; 
+}
+
+.boton-audio {
+    margin: 0px 2px; 
+    width: 50px;
+    transition-property: background-color, color; 
+    transition-duration: 0.15s;
+    transition-timing-function: linear; 
+}
+
+.boton-audio:hover {
+    background-color: var(--contrast-color);
+    color: var(--white-font)
+}
