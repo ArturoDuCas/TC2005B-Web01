@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Manrope"); 
 
 :root {
-    --white-font: #F8F4EA; 
+    --white-font: #F0F0F0; 
     --contrast-color: #FF6D60; 
-    --black: #000000;
+    --black: #090909;
     --header-height: 75px; 
 }
 

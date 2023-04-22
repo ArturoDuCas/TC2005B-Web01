@@ -1,6 +1,8 @@
 @import url("global.css"); 
 
-
+body {
+    min-width: 420px; 
+}
 
 #primera-vista {
     background-image: url("../img/option2.jpg");
@@ -14,12 +16,12 @@
 }
 
 #primera-lado-izquierdo {
-    margin-right: 150px; 
+    margin-right: 7vw; 
 }
 
 #titulo-principal {
     color: var(--white-font); 
-    font-size: 90px; 
+    font-size: 8vw; 
     margin-bottom: 15px;
 }
 
@@ -28,12 +30,11 @@
     flex-direction: column; 
     align-items: center;
     justify-content: center;
-    /* margin-left: 25%;  */
     column-gap: 50px; 
 }
 
 .boton-principal {
-    width: 200px; 
+    width: 20vw; 
     margin-bottom: 20px; 
     font-size: 20px;
     letter-spacing: 2px; 
@@ -41,12 +42,26 @@
 
 .boton-principal.log {
     background-color: var(--contrast-color); 
+    transition-property: color;
+    transition-duration: 0.25s; 
+}
+
+.boton-principal.log:hover {
+    color: var(--white-font); 
+
 }
 
 .boton-principal.sign {
     border: 1px solid var(--contrast-color); 
     background-color: unset;
-    color: white; 
+    color: var(--white-font); 
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.boton-principal.sign:hover {
+    background-color: var(--contrast-color); 
+    color: var(--white-font); 
 }
 
 #segunda-vista {
@@ -65,13 +80,13 @@
 
 #frase {
     width: 40vw; 
-    font-size: 45px;
+    font-size: 4vw;
     text-align: left;
 }
 
 .divisor {
     width: 70vw; 
-    border-bottom: 2px solid black; 
+    border-bottom: 2px solid var(--black); 
     margin-bottom: 50px; 
 }
 
@@ -79,7 +94,7 @@
     display: flex; 
     justify-content: space-around;
     align-items: center;
-
+    flex-wrap: wrap;
     margin-bottom: 40px; 
 
 
@@ -91,7 +106,7 @@
 }
 
 #tercera-vista-titulo {
-    font-size: 40px;
+    font-size: 3.5vw;
     margin-bottom: 20px; 
 }
 
@@ -99,7 +114,28 @@
     font-size: 20px; 
     text-align: justify;
 }
+
 #video {
     width: 35vw; 
     height: 400px; 
+}
+
+
+@media (max-width: 780px) {
+    #segunda-vista {
+        padding: 0px 50px; 
+    }
+    
+    #frase {
+    width: 42vw; 
+    font-size: 5vw;
+    }
+}
+
+@media (max-width: 670px) {
+    .boton-principal {
+        font-size: 15px;
+        letter-spacing: 1px; 
+    }
+
 }

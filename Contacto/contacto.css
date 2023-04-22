@@ -45,6 +45,8 @@ input, textarea {
     border-bottom: 1px solid gray;
     transition-property: border-bottom;
     transition-duration: 0.2s;
+    
+    font-size: 12px; 
 }
 
 
@@ -79,4 +81,24 @@ label.message {
 .submit:hover {
     background-color: var(--contrast-color);
     color: var(--white-font);
+}
+
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 40px;
+        text-align: center;
+        padding-left: 0px; 
+    }
+
+    #contenedor-form {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    
+    #img-lado-izquierdo {
+        width: 100%; 
+        border-top-right-radius: unset;
+        order: 2; 
+    }
 }
